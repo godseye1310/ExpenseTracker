@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS PROJECT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <form onsubmit="myexpense(event)" id="forms" action="">
+        <label for="expense">Enter Expense Amount: </label><input id="expense" type="number" />
+        <label for="description">Enter Description: </label><input id="description" type="text" />
+        <label for="category">Choose a Category: </label>
+        <select name="" id="category">
+          <option value="Fuel">Fuel</option>
+          <option value="Food">Food</option>
+          <option value="Electricity">Electricity</option>
+          <option value="Movie">Movie</option>
+        </select>
+        <!-- <input id="category" list="Category" /> -->
+        <button id="btn" type="submit">Add Expense</button>
+      </form>
+
+      <ul id="expenseList"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
